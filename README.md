@@ -1,32 +1,34 @@
 # Virtual Host Setup on Windows with XAMPP
  <br>
- <em>Edit host file<em>
+ <h3>Edit host file<h3>
+ <br>
  <code>File Location -> C:/Windows/System32/drivers/etc/hosts</code> 
- <em>Open with VS Code (Recommended) Add this lines and save (VS Code will prompt to Retry to save with Administrator rights)<em>
+ <b>Open with VS Code (Recommended) Add this lines and save (VS Code will prompt to Retry to save with Administrator rights)<b>
  <code>
 	127.0.0.1   localhost
         127.0.0.1   yoursitename.xyz
  </code>
  <br>
- <em>Edit httpd.conf</em>
+ <h3>Edit httpd.conf</h3>
+ <br>
  <code>File Location -> C:/xampp/apache/conf/httpd.conf</code>
- <em>Open file with any text editor and search # Virtual hosts and uncomment the next line and save</em>
+ <b>Open file with any text editor and search # Virtual hosts and uncomment the next line and save</b>
  <code>
 	# Virtual hosts
 	# Include conf/extra/httpd-vhosts.conf
  </code>
- <em>After editing it should look like this</em>
+ <b>After editing it should look like this</b>
  <br>
  <code>
 	# Virtual hosts
 	Include conf/extra/httpd-vhosts.conf
  </code>
  <br>
- <em>Edit httpd-vhosts.conf</em>
+ <h3>Edit httpd-vhosts.conf</h3>
  <br>
  <code>File Location -> C:/xampp/apache/conf/extra/httpd-vhosts.conf</code>
  <br>
- <em>Add this lines and save<em>
+ <b>Add this lines and save<b>
  <br>
  <code>
 	<VirtualHost *:80>
@@ -34,7 +36,6 @@
         	ServerName localhost
         </VirtualHost>
  </code>
- <br>
  <code>
 	<VirtualHost *:80>
     		DocumentRoot "C:/xampp/htdocs/your-project-foldername"
