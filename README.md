@@ -30,16 +30,6 @@
  <br>
  <b>Add this lines and save<b>
  <br>
- <code>
-	<VirtualHost *:80>
-        	DocumentRoot "C:/xampp/htdocs"
-        	ServerName localhost
-        </VirtualHost>
-       <br>
-	<VirtualHost *:80>
-    		DocumentRoot "C:/xampp/htdocs/your-project-foldername"
-    		ServerName yoursitename.xyz
-	</VirtualHost>
- </code>
+ <img src="https://github.com/marlonmdev/Local-Virtual-Host/blob/main/codes.png" alt="code">
  <br>
  <b>Now you can access your local website by typing <code>yoursitename.xyz</code> instead of <code>localhost/your-project-foldername</code> on your browser</b>
